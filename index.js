@@ -11,6 +11,7 @@ const getArticles = () => {
       `
       console.log(element.title)
     })
+    artContainer.innerHTML += output
   })
 }
 
