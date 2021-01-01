@@ -3,15 +3,16 @@ const getArticles = () => {
   .then(res => res.json())
   .then(data => {
     let artContainer = document.getElementById('articles-container')
-    let output = `<h2>Latest Articles</h2>`
+    let output = document.createElement('div')
     data.forEach((element) => {
-      output += `
-        <h3>${element.title}</h3>
-        <p>${element.summary}</p>
+      output.innerHTML += `
+        <div class="article">
+          <h3>${element.title}</h3>
+          <p>${element.summary}</p>
+        </div>
       `
-      console.log(element.title)
     })
-    artContainer.innerHTML += output
+    artContainer.appendChild(output)
   })
 }
 
