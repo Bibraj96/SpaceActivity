@@ -6,10 +6,8 @@ const getArticles = () => {
     let output = document.createElement('div')
     data.forEach((element) => {
       output.innerHTML += `
-        <div class="article">
-          <h3>${element.title}</h3>
-          <p>${element.summary}</p>
-        </div>
+        <h3>${element.title}</h3>
+        <p>${element.summary}</p>
       `
     })
     artContainer.appendChild(output)
