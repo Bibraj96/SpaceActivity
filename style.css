@@ -29,3 +29,17 @@ h3 {
   font-weight: 700;
   line-height: 1.2;
 }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #5e747f;
+  color: #fff;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+}
