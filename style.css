@@ -47,3 +47,18 @@ h3 {
 i {
   padding-right: 7px;
 }
+
+.navbar a {
+  color: #fff;
+  padding: 10px 25px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  color: #b6be9c;
+  border-bottom: #b6be9c 2px solid;
+}
+
+.navbar ul {
+  display: flex;
+}
