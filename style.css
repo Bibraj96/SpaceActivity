@@ -48,6 +48,11 @@ i {
   padding-right: 7px;
 }
 
+.navbar h1:hover {
+  color: #b6be9c;
+  cursor: pointer;
+}
+
 .navbar a {
   color: #fff;
   padding: 10px 25px;
@@ -61,4 +66,8 @@ i {
 
 .navbar ul {
   display: flex;
+}
+
+img {
+  width: 300px;
 }
