@@ -6,6 +6,7 @@ const getArticles = () => {
     let output = document.createElement('div')
     data.forEach((element) => {
       output.innerHTML += `
+        <img src="${element.imageUrl}">
         <h3>${element.title}</h3>
         <p>${element.summary}</p>
       `
