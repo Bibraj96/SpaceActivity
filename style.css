@@ -39,9 +39,9 @@ h3 {
   color: #fff;
   width: 100%;
   height: 100px;
-  position: fixed;
   top: 0px;
   padding: 0 30px;
+  position: fixed;
 }
 
 i {
@@ -73,6 +73,10 @@ img {
 }
 
 /* Articles */
+#articles {
+  margin-top: 150px;
+}
+
 #articles-container {
   display: flex;
   flex-direction: column;
@@ -82,10 +86,26 @@ img {
   width: 350px;
 }
 
+#articles h2 {
+  padding-left: 50px;
+}
+
 /* Article Item */
 .article-item {
-  background: #b6be9c;
+  background: #ccc;
   border: #b6be9c solid 2px;
   box-shadow: 1px 1px 3px #ccc;
   border-radius: 10px;
+  margin: 25px;
+}
+
+.article-item img {
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 1px 1px 3px #ccc;
+}
+
+.article-item p,
+h3 {
+  padding: 15px;
 }
