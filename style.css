@@ -81,3 +81,10 @@ img {
   text-align: center;
   width: 350px;
 }
+
+/* Article Item */
+.article-item {
+  display: inline;
+  border: #b6be9c solid 2px;
+  border-radius: 10px;
+}
