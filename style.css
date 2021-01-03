@@ -84,7 +84,8 @@ img {
 
 /* Article Item */
 .article-item {
-  display: inline;
+  background: #b6be9c;
   border: #b6be9c solid 2px;
+  box-shadow: 1px 1px 3px #ccc;
   border-radius: 10px;
 }
