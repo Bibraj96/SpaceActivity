@@ -77,14 +77,12 @@ img {
   margin-top: 150px;
 }
 
-/* #articles-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#articles-container {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  text-align: center;
-  width: 350px;
-} */
+}
 
 #articles h2 {
   padding-left: 50px;
@@ -96,7 +94,6 @@ img {
   border: #b6be9c solid 2px;
   box-shadow: 1px 1px 3px #ccc;
   border-radius: 10px;
-  margin: 25px;
 }
 
 .article-item img {
