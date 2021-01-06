@@ -35,10 +35,10 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #5e747f;
+  background-color: #7b9e87;
   color: #fff;
   width: 100%;
-  height: 100px;
+  height: 75px;
   top: 0px;
   padding: 0 30px;
   position: fixed;
@@ -60,8 +60,8 @@ i {
 }
 
 .navbar a:hover {
-  color: #b6be9c;
-  border-bottom: #b6be9c 2px solid;
+  color: #d2d0ba;
+  border-bottom: #d2d0ba 2px solid;
 }
 
 .navbar ul {
@@ -90,7 +90,7 @@ img {
 
 /* Article Item */
 .article-item {
-  background: #ccc;
+  background: #fff;
   border: #b6be9c solid 2px;
   box-shadow: 1px 1px 3px #ccc;
   border-radius: 10px;

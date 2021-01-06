@@ -1,4 +1,4 @@
-const getArticles = () => {
+const fetchArticles = () => {
   fetch('https://spaceflightnewsapi.net/api/v2/articles')
   .then(res => res.json())
   .then(data => {
@@ -17,4 +17,4 @@ const getArticles = () => {
   })
 }
 
-document.addEventListener('DOMContentLoaded', getArticles());
+document.addEventListener('DOMContentLoaded', fetchArticles());
