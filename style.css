@@ -48,7 +48,7 @@ i {
   padding-right: 7px;
 }
 
-.navbar h1:hover {
+.navbar h2:hover {
   color: #b6be9c;
   cursor: pointer;
 }
@@ -59,9 +59,17 @@ i {
   margin: 0 5px;
 }
 
-.navbar a:hover {
+.links a:hover {
   color: #d2d0ba;
   border-bottom: #d2d0ba 2px solid;
+}
+
+.social a {
+  padding: 2px;
+}
+
+.social i:hover {
+  color: #d2d0ba;
 }
 
 .navbar ul {
