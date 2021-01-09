@@ -10,7 +10,8 @@ const fetchArticles = () => {
           <img src="${element.imageUrl}">
           <h3>${element.title}</h3>
           <p>${element.summary}</p>
-          <p>${toUtc(element.updatedAt.slice(0, 10)).slice(0, 16)}
+          <p class="date">${toUtc(element.updatedAt.slice(0, 10)).slice(0, 16)}</p>
+          <p class="site">${element.newsSite}</p>
         </div>
       `
     })
