@@ -10,7 +10,7 @@ const fetchArticles = () => {
           <img src="${element.imageUrl}">
           <h3>${element.title}</h3>
           <p>${element.summary}</p>
-          <p>${element.updatedAt.slice(0, 10)}
+          <p>${toUtc(element.updatedAt.slice(0, 10)).slice(0, 16)}
         </div>
       `
     })
@@ -19,3 +19,7 @@ const fetchArticles = () => {
 }
 
 document.addEventListener('DOMContentLoaded', fetchArticles());
+
+const toUtc = (date) => {
+  return new Date(date).toUTCString()
+} 
