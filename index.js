@@ -10,6 +10,7 @@ const fetchArticles = () => {
           <img src="${element.imageUrl}">
           <h3>${element.title}</h3>
           <p>${element.summary}</p>
+          <p>${element.updatedAt.slice(0, 10)}
         </div>
       `
     })
