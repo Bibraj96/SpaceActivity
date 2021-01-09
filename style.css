@@ -78,10 +78,11 @@ i {
 
 .navbar ul {
   display: flex;
+  justify-self: end;
 }
 
 img {
-  width: 300px;
+  width: 100%;
 }
 
 /* Articles */
@@ -94,6 +95,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
+  margin: auto;
 }
 
 #articles h2 {
@@ -103,7 +105,8 @@ img {
 /* Article Item */
 .article-item {
   background: #fff;
-  border: var(--secondary-color) solid 2px;
+  margin: 10px;
+  border: #f4f4f4 solid 2px;
   box-shadow: 1px 1px 3px #ccc;
   border-radius: 10px;
 }
