@@ -36,16 +36,12 @@ h3 {
 
 /* Navbar */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
   background-color: var(--primary-color);
   color: #fff;
-  width: 100%;
-  height: 75px;
-  top: 0px;
-  padding: 0 30px;
-  position: fixed;
+  grid-template-columns: 6fr 3fr 2fr;
+  padding: 1rem;
+  align-items: center;
 }
 
 i {
@@ -68,6 +64,10 @@ i {
   border-bottom: var(--secondary-color) 2px solid;
 }
 
+.social {
+  justify-self: end;
+}
+
 .social a {
   padding: 2px;
 }
@@ -78,7 +78,7 @@ i {
 
 .navbar ul {
   display: flex;
-  justify-self: end;
+  margin-right: 70%;
 }
 
 img {
@@ -87,7 +87,7 @@ img {
 
 /* Articles */
 #articles {
-  margin-top: 150px;
+  margin-top: 75px;
 }
 
 #articles-container {
