@@ -85,6 +85,20 @@ img {
   width: 100%;
 }
 
+/* Showcase */
+#showcase {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+#showcase:before {
+  content: "";
+  background: url("./images/spacelog-showcase.jpg") no-repeat center
+    center/cover;
+}
+
 /* Articles */
 #articles {
   margin-top: 75px;
