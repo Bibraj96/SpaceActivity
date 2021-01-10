@@ -8,8 +8,8 @@ const fetchArticles = () => {
       articleContainer.innerHTML += `
         <div class="article-item">
           <img src="${element.imageUrl}">
-          <h3>${element.title}</h3>
-          <p>${element.summary}</p>
+          <h3 class="title">${element.title}</h3>
+          <p class="summary">${element.summary}</p>
           <p class="date">${toUtc(element.updatedAt.slice(0, 10)).slice(0, 16)}</p>
           <p class="site">${element.newsSite}</p>
         </div>
