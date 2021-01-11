@@ -141,8 +141,8 @@ i {
 #articles-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 1rem;
-  justify-content: center;
   margin: 30px;
 }
 
@@ -154,6 +154,12 @@ i {
 .article-item {
   background: #fff;
   border: #ddd solid 2px;
+}
+
+.article-item:hover {
+  cursor: pointer;
+  background: #eee;
+  box-shadow: 2px 2px 5px #ddd;
 }
 
 .article-item img {
