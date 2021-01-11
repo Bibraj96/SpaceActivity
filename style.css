@@ -157,5 +157,24 @@ h3 {
   margin-bottom: 10px;
 }
 
-.main-footer {
+/* Footer */
+#main-footer {
+  background: var(--secondary-color);
+  padding: 25px;
+}
+
+#main-footer a {
+  color: white;
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+#main-footer .footer-container > *:last-child {
+  grid-column: 1 / span 4;
+  padding: 0.5rem;
+  text-align: center;
 }
