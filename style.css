@@ -34,6 +34,18 @@ h3 {
   line-height: 1.2;
 }
 
+.btn {
+  display: inline-block;
+  border: none;
+  background: #333;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
 /* Navbar */
 .navbar {
   display: grid;
@@ -167,6 +179,10 @@ h3 {
   color: white;
 }
 
+#main-footer a:hover {
+  color: #333;
+}
+
 #main-footer .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -177,4 +193,20 @@ h3 {
   grid-column: 1 / span 4;
   padding: 0.5rem;
   text-align: center;
+}
+
+#main-footer .footer-container input[type="email"] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-top: 10px;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type="submit"] {
+  width: 90%;
+}
+
+#main-footer .footer-container input:focus {
+  outline: none !important;
+  border: 4px solid var(--primary-color);
 }
