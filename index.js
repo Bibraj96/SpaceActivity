@@ -1,9 +1,18 @@
+const logItem = () => {
+  console.log("works")
+}
+
+const addListeners = () => {
+  document.querySelectorAll('.article-item').forEach(element => {
+    element.addEventListener("click", logItem)
+  }); 
+}
+
 const fetchArticles = () => {
   fetch('https://spaceflightnewsapi.net/api/v2/articles')
   .then(res => res.json())
   .then(data => {
     let articleContainer = document.getElementById('articles-container')
-    // let output = document.createElement('div')
     data.forEach((article) => {
       articleContainer.innerHTML += `
         <div class="article-item" data-id="${article.id}">
@@ -15,12 +24,17 @@ const fetchArticles = () => {
         </div>
       `
     })
-    // artContainer.appendChild(output)
+    addListeners()
   })
 }
 
-document.addEventListener('DOMContentLoaded', fetchArticles());
+const init = () => {
+  fetchArticles()
+}
+
+document.addEventListener('DOMContentLoaded', init);
+
 
 const toUtc = (date) => {
   return new Date(date).toUTCString()
-} 
+}
