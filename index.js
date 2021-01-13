@@ -1,5 +1,5 @@
-const logItem = () => {
-  console.log("works")
+const logItem = (e) => {
+  console.log(e.target)
 }
 
 const addListeners = () => {
@@ -16,11 +16,13 @@ const fetchArticles = () => {
     data.forEach((article) => {
       articleContainer.innerHTML += `
         <div class="article-item" data-id="${article.id}">
+        <a href="${article.url}" target="_blank">
           <img src="${article.imageUrl}">
           <h3 class="title">${article.title}</h3>
           <p class="summary">${article.summary}</p>
           <p class="date">${toUtc(article.updatedAt.slice(0, 10)).slice(0, 16)}</p>
           <p class="site">${article.newsSite}</p>
+          </a>
         </div>
       `
     })
