@@ -13,7 +13,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: #fff;
+  background: #f4f4f4;
   color: #333;
   line-height: 1.6;
 }
@@ -141,7 +141,6 @@ i {
 #articles-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   grid-gap: 1rem;
   margin: 30px;
 }
