@@ -18,6 +18,12 @@ body {
   line-height: 1.6;
 }
 
+.container {
+  margin: auto;
+  padding: 2rem;
+  overflow: hidden;
+}
+
 ul {
   list-style: none;
 }
@@ -81,6 +87,11 @@ i {
 
 .links a:hover {
   color: var(--secondary-color);
+  border-bottom: var(--secondary-color) 2px solid;
+}
+
+.current {
+  color: var(--secondary-color) !important;
   border-bottom: var(--secondary-color) 2px solid;
 }
 
@@ -223,4 +234,16 @@ h3 {
 #main-footer .footer-container input:focus {
   outline: none !important;
   border: 4px solid var(--primary-color);
+}
+
+/* About */
+#about {
+  /* height: 91vh; */
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
 }
