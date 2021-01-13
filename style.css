@@ -24,6 +24,11 @@ body {
   overflow: hidden;
 }
 
+.card {
+  background: var(--secondary-color);
+  padding: 15px;
+}
+
 ul {
   list-style: none;
 }
@@ -246,4 +251,10 @@ h3 {
   grid-template-columns: 5fr 2fr;
   margin: 2rem 0;
   grid-gap: 1.5rem;
+}
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+
+.page-conatiner.card {
 }
