@@ -22,7 +22,18 @@
 @media (max-width: 600px) {
   /* Stack Grid Items */
   #showcase .showcase-container,
-  #articles-container {
+  #articles-container,
+  #main-footer .footer-container {
     grid-template-columns: 1fr;
+  }
+
+  #main-footer .footer-container > *:last-child {
+    grid-column: 1;
+  }
+
+  #main-footer .footer-container > *:last-child,
+  #main-footer .footer-container > *:nth-child(2) {
+    padding-bottom: 1rem;
+    border-bottom: #666 solid 1px;
   }
 }
