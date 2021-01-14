@@ -12,3 +12,9 @@
 .navbar h2 {
   justify-self: center;
 }
+
+/* Articles */
+
+#articles-container {
+  grid-template-columns: repeat(2, 1fr);
+}
