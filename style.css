@@ -113,8 +113,8 @@ i {
 }
 
 .navbar ul {
+  justify-self: end;
   display: flex;
-  margin-right: 70%;
 }
 
 /* Showcase */
