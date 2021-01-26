@@ -25,7 +25,7 @@ body {
 }
 
 .card {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   padding: 15px;
 }
 
@@ -52,11 +52,12 @@ h3 {
   color: #fff;
   padding: 0.5rem 1.5rem;
   margin-top: 10px;
+  transition: background-color 0.5s;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .list li {
@@ -79,6 +80,10 @@ i {
   padding-right: 7px;
 }
 
+.navbar h2 {
+  transition: color 0.5s;
+}
+
 .navbar h2:hover {
   color: var(--secondary-color);
   cursor: pointer;
@@ -88,6 +93,8 @@ i {
   color: #fff;
   padding: 10px 25px;
   margin: 0 5px;
+  transition: border 0.5s;
+  transition: color 0.5s;
 }
 
 .links a:hover {
@@ -106,6 +113,10 @@ i {
 
 .social a {
   padding: 2px;
+}
+
+.social i {
+  transition: color 0.5s;
 }
 
 .social i:hover {
@@ -193,14 +204,14 @@ h3 {
   color: #fff;
   font-size: 1rem;
   padding: 0.5rem;
-  border-radius: 50px;
-  margin: 5px;
-  margin-bottom: 10px;
+  border-radius: 5px;
+  margin: 13px;
+  margin-bottom: 15px;
 }
 
 /* Footer */
 #main-footer {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   padding: 25px;
 }
 
