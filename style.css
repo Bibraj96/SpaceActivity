@@ -180,6 +180,7 @@ i {
 .article-item {
   background: #fff;
   border: #ddd solid 2px;
+  transition: background-color 0.5s;
 }
 
 .article-item:hover {
@@ -217,6 +218,7 @@ h3 {
 
 #main-footer a {
   color: white;
+  transition: color 0.5s;
 }
 
 #main-footer a:hover {
