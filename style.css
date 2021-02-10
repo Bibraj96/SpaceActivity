@@ -137,6 +137,10 @@ i {
   position: relative;
 }
 
+#showcase h1 {
+  margin-bottom: 12.5px;
+}
+
 #showcase:before {
   content: "";
   background: url("./images/spacelog-showcase.jpg") no-repeat center
