@@ -93,13 +93,14 @@ i {
   color: #fff;
   padding: 10px 25px;
   margin: 0 5px;
-  transition: border 0.5s;
+  border-bottom: 2px transparent solid;
+  transition: border-color 0.5s;
   transition: color 0.5s;
 }
 
 .links a:hover {
   color: var(--secondary-color);
-  border-bottom: var(--secondary-color) 2px solid;
+  border-color: var(--secondary-color) 2px solid;
 }
 
 .current {
